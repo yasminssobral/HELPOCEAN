@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #ffffff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    max-height: 60px; 
+    width: auto; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    align-items: center; 
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 4px 0;
+}
+
+.menu {
+    align-items: center; 
+    list-style-type: none;
+    display: flex;
+    margin-top: 0;
+    padding: 0; 
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #0080ff;
+}
+
+.section {
+    text-align: center;
+    padding: 100px 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home {
+    background-color: #191919;
+    color: #fff;
+}
+
+#problema {
+    background-color: #13538A;
+    color: #fff;
+}
+
+#tecnologia {
+    background-color: #2C92D5;
+    color: #333;
+}
+
+#objetivos {
+    background-color: #37C9EF;
+    color: #fff;
+}
+
+#publico {
+    background-color: #3EDAD8;
+    color: #fff;
+}
+
+#beneficios {
+    background-color: #38a195;
+    color: #fff;
+}
+
+#soluçao {
+    background-color: #38a185;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.7); 
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px 0; 
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        margin-left: 0;
+        padding: 10px 20px;
+        border-bottom: 1px solid #ffffff; 
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
