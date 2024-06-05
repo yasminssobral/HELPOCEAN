@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Ocean</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>     
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0accfe2e02.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./imagens/logogs.png" alt="logo">
+                </div>
+                <nav>
+                    <div class="hamburger-menu"><i class="fa-solid fa-bars"></i></div>
+                    <ul class="menu">
+                        <li><a href="#home"><i class="fa-solid fa-user"></i> MINHA CONTA</a></li>
+                        <li><a href="#problema">PROBLEMA</a></li>
+                        <li><a href="#tecnologia">TECNOLOGIA</a></li>
+                        <li><a href="#objetivos">OBJETIVOS</a></li>
+                        <li><a href="#publico">PÚBLICO</a></li>
+                        <li><a href="#beneficios">BENEFÍCIOS</a></li>
+                        <li><a href="#soluçao">SOLUÇÃO</a></li>
+                        <li class="cadastro"><a href="cadastro.html">FAÇA PARTE</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <div class="map-container">
+        <div class="map-text">
+            <h1>Minha localização é:</h1>
+            <h2></h2>
+        </div>
+        <div id="map"></div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
