@@ -31,9 +31,14 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.logo {
+    flex: 1;
+}
+
 .logo img {
-    max-height: 60px; 
+    max-height: 120px; 
     width: auto; 
+    margin-right: auto; 
 }
 
 .navbar {
@@ -47,17 +52,17 @@ header {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    color: #ffffff;
+    font-size: 24px; 
 }
 
 .bar {
     width: 25px;
     height: 3px;
-    background-color: #ffffff;
     margin: 4px 0;
 }
 
 .menu {
-    align-items: center; 
     list-style-type: none;
     display: flex;
     margin-top: 0;
@@ -71,12 +76,25 @@ header {
 .menu li a {
     color: #ffffff; 
     text-decoration: none;
-    font-weight: 600;
+    font-family: "Exo", sans-serif;
     transition: color 0.3s ease;
 }
 
 .menu li a:hover {
-    color: #0080ff;
+    color: #2C92D5;
+}
+
+.menu li.cadastro a {
+    color: #ffffff; 
+    background-color: #2C92D5;
+    border-radius: 20px;
+    padding: 15px;
+    font-weight: bold; 
+}
+
+.menu li.cadastro a:hover{
+    color: #2C92D5; 
+    background-color: #ffffff;
 }
 
 .section {
@@ -91,6 +109,24 @@ header {
 #home {
     background-color: #191919;
     color: #fff;
+}
+
+.imagem-direita {
+    position: relative; 
+}
+
+.img1 {
+    position: absolute;
+    top: 0;
+    right: -100px; 
+    width: 300px; 
+    height: auto;
+    z-index: -1; /
+}
+
+.text1 {
+    flex: 1;
+    padding: 20px;
 }
 
 #problema {
@@ -118,7 +154,7 @@ header {
     color: #fff;
 }
 
-#soluçao {
+#solucao {
     background-color: #38a185;
     color: #fff;
 }
@@ -130,8 +166,24 @@ footer {
     text-align: center;
 }
 
-/* Media Queries */
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
 @media (max-width: 768px) {
+
+    .img1 {
+        position: static;
+        margin-top: 20px; 
+        width: 100%;
+    }
+    .hamburger-menu {
+        display: flex; 
+    }
     .container {
         padding: 0 10px;
     }
@@ -140,16 +192,18 @@ footer {
         display: none;
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.7); 
-        position: absolute;
+        position: fixed;
         top: 60px;
-        left: 0;
+        left: -100%; 
         width: 100%;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         padding: 20px 0; 
+        z-index: 999;
+        transition: left 0.3s ease; 
     }
 
     .menu.active {
-        display: flex;
+        left: 0; 
     }
 
     .menu li {
@@ -159,6 +213,14 @@ footer {
     }
 
     .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 769px) {
+    .menu {
         display: flex;
     }
 }

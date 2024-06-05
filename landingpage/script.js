@@ -1,4 +1,5 @@
-
-document.querySelector('.hamburger-menu').addEventListener('click', function() {
-    document.querySelector('.menu').classList.toggle('active');
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.hamburger-menu').addEventListener('click', function() {
+        document.querySelector('.menu').classList.toggle('active');
+    });
 });

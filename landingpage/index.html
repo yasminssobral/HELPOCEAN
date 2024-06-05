@@ -5,37 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Solution</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0accfe2e02.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                <img src="./imagens/logogs.png" alt="logo">
-            </div>
-            <nav class="navbar">
-                <div class="hamburger-menu">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./imagens/logogs.png" alt="logo">
                 </div>
-                <ul class="menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#problema">Problema</a></li>
-                    <li><a href="#tecnologia">Tecnologia</a></li>
-                    <li><a href="#objetivos">Objetivos</a></li>
-                    <li><a href="#publico">Público</a></li>
-                    <li><a href="#beneficios">Benefícios</a></li>
-                    <li><a href="#soluçao">Solução</a></li>
-                </ul>
-            </nav>
+                <nav>
+                    <div class="hamburger-menu"><i class="fa-solid fa-bars"></i></div>
+                    <ul class="menu">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#problema">PROBLEMA</a></li>
+                        <li><a href="#tecnologia">TECNOLOGIA</a></li>
+                        <li><a href="#objetivos">OBJETIVOS</a></li>
+                        <li><a href="#publico">PÚBLICO</a></li>
+                        <li><a href="#beneficios">BENEFÍCIOS</a></li>
+                        <li><a href="#soluçao">SOLUÇÃO</a></li>
+                        <li class="cadastro"><a href="cadastro.html">FAÇA PARTE</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     
 
     <section id="home" class="section">
         <div class="container">
+            <div class="text1"></div>
             <h1>Help Ocean</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptates consectetur error similique id delectus, adipisci et laudantium, ut quidem explicabo reprehenderit velit quasi impedit pariatur rem est facere! Totam?</p>
+            </div>
+
+            <div class="imagem-direita">
+            <img src="./imagens/image1.png" alt="Imagem" class="img1">
+            </div>
+            
         </div>
     </section>
 
@@ -86,5 +97,7 @@
             <p>&copy; 2024 Global Solution. Todos os direitos reservados.</p>
         </div>
     </footer>
+    
+    <script src="./landingpage/script.js"></script>
 </body>
 </html>
