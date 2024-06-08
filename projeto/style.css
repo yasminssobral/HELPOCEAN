@@ -1,12 +1,12 @@
 #map-container {
-    display: flex; 
+    display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     height: 100vh;
     background-image: url("./imagens/37130.jpg");
-    background-size: cover; 
+    background-size: cover;
     background-position: center; 
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
 
 #map {
@@ -14,7 +14,10 @@
     width: 100vh;
     z-index: 0;
 }
-
+.grafico-container{
+    background-color: #191919; 
+    background-position: center; 
+}
 .alerta {
     background-color: #38a185; /* Cor de fundo verde */
     border: none;
